@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <main>
+        <h1>Switch</h1>
+        <section>
+            <!-- Ejercicio 1 -->
+            <button id="button1">01 Calificación de letras</button>
+            <div id="float-window-1" class="float-window inactive">
+                <a id="close-btn1">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Calificación de letras</h2>
+                <form>
+                    <label for="calificacionLetra">Ingresa una letra (A, B, C, D, F)</label><br>
+                    <input name="calificacion" id="calificacionLetra" type="text" required><br>
+                    <button id="calcCalificacionLetra" type="submit">Aceptar</button>  
+                </form>
+                <p id="muestraCalificacionLetra"></p>
+            </div>
+
+            <!-- Ejercicio 2 -->
+            <button id="button2">02 Número mayor</button>
+            <div id="float-window-2" class="float-window inactive">
+                <a id="close-btn2" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Número Mayor</h2>
+                <form>
+                    <p>Escribe dos números y te aparecerá cual es el mayor</p>
+                    <label for="numberM1">Escribe el primer número</label><br>
+                    <input name="number" id="numberM1" type="number" required><br>
+                    <label for="numberM2">Escribe el segundo número</label><br>
+                    <input name="number" id="numberM2" type="number" required><br>
+                    <button id="calcMayor" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraNumMayor"></p>
+            </div>
+
+            <!-- Ejercicio 3  -->
+            <button id="button3">03 Año bisiesto</button>
+            <div id="float-window-3" class="float-window inactive">
+                <a id="close-btn3" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Año bisiesto</h2>
+                <form>
+                    <p>Ingresa un año y te dire si es bisiesto 🤓</p>
+                    <label for="yearB">Escribe el año</label><br>
+                    <input name="number" id="yearB" type="number" required><br>
+                    <button id="calcBisiesto" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraBisiesto"></p>
+            </div>
+
+            <!-- Ejercicio 4  -->
+            <button id="button4">04 Vocal o consonante</button>
+            <div id="float-window-4" class="float-window inactive">
+                <a id="close-btn4" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Vocal o Consonante</h2>
+                <form>
+                    <p>Te mostrare si el caracter que escribiste es una vocal o consonante</p>
+                    <label for="caracterUser">Escribe un caracter</label><br>
+                    <input name="caracter" id="caracterUser" type="text" required><br>
+                    <button id="calcVoCon" type="submit">Enviar</button>  
+                </form>
+                <p id="muestraVoCon"></p>
+            </div>
+
+            <!-- Ejercicio 5  -->
+            <button id="button5">05 Días del mes</button>
+            <div id="float-window-5" class="float-window inactive">
+                <a id="close-btn5" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Días del mes</h2>
+                <form>
+                    <p>Te mostrarás cuantos días tiene el mes que ingresaste</p>
+                    <label for="mesUser">Escribe el mes</label><br>
+                    <input name="mes" id="mesUser" type="text" required><br>
+                    <button id="calcDiasMes" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraDiasMes"></p>
+            </div>
+
+            <!-- Ejercicio 6  -->
+            <button id="button6">06 Calificación</button>
+            <div id="float-window-6" class="float-window inactive">
+                <a id="close-btn6" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Calificación</h2>
+                <form>
+                    <p>Te mostraré que letra corresponde a tus notas</p>
+                    <label for="notaUser">Ingresa tu calificación del 1.0 al 10.0:</label><br>
+                    <input name="number" id="notaUser" type="number" required><br>
+                    <button id="calcLetraNota" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraLetraNota"></p>
+            </div>
+
+            <!-- Ejercicio 7 -->
+            <button id="button7">07 Celcius a Fahrenheit</button>
+            <div id="float-window-7" class="float-window inactive">
+                <a id="close-btn7" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Celcius a Fahrenheit</h2>
+                <form>
+                    <p>Conversor de grados Celcius a Fahrenheit</p>
+                    <label for="celcius">Ingresa la temperatura en grados celcius</label><br>
+                    <input name="number" id="celcius" type="number" required><br>
+                    <button id="calcFahrenheit" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraFahrenheit"></p>
+            </div>
+
+            <!-- Ejercicio 8 -->
+            <button id="button8">08 Contraseña</button>
+            <div id="float-window-8" class="float-window inactive">
+                <a id="close-btn8" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Contraseña</h2>
+                <form>
+                    <p>Este programa te dirá si la contraseña ingresada es correcta o incorecta</p>
+                    <label for="passwordUser">Ingresa tu contraseña</label><br>
+                    <input name="password" id="passwordUser" type="text" required placeholder="1234"><br>
+                    <button id="validarPass" type="submit">Validar</button>  
+                </form>
+                <p id="muestraPass"></p>
+            </div>
+
+            <!-- Ejercicio 9  -->
+            <button id="button9">09 Colores del arcoiris</button>
+            <div id="float-window-9" class="float-window inactive">
+                <a id="close-btn9" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Colores del arcoiris</h2>
+                <form>
+                    <p>Muestra si el color ingresado por el usuario está o no en el arcoiris</p>
+                    <label for="colorUser">Escribe un color</label><br>
+                    <input name="color" id="colorUser" type="text" required><br>
+                    <button id="validarColor" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraColor"></p>
+            </div>
+
+            <!-- Ejercicio 10  -->
+            <button id="button10">10 Animales</button>
+            <div id="float-window-10" class="float-window inactive">
+                <a id="close-btn10" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Animales</h2>
+                <form>
+                    <p>Muestra la clasificación del animal que ingreses</p>
+                    <label for="animalUser">Escribe un animal</label><br>
+                    <input name="animal" id="animalUser" type="text" required><br>
+                    <button id="validarAnimal" type="submit">Aceptar</button>  
+                </form>
+                <p id="muestraAnimal"></p>
+            </div>
+
+        </section>
+    </main>
+    <script src="./js/switch.js"></script>
+</body>
+</html>
