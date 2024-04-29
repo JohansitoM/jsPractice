@@ -48,7 +48,9 @@ calcCalificacionLetra.addEventListener('click', function (event) {
     }
 })
 
-// Ejercicio 2 Número mayor
+// __________________________________________________________________________________________
+
+// Ejercicio 2 Numero dia
 
 // Abre ventana
 let btnEjercicio02 = document.getElementById('button2')
@@ -65,36 +67,54 @@ closeBtn2.addEventListener('click', function() {
     ventanaEjercicio2.classList.add('inactive')
 })
 
-let inputNum1 = document.getElementById('numberM1')
-let inputNum2 = document.getElementById('numberM2')
-let calcNumMayor = document.getElementById('calcMayor')
-let respuestaNumMayor = document.getElementById('muestraNumMayor')
+let inputNumDia = document.getElementById('numberDiaLetras')
+let calcDiaLetras = document.getElementById('calcDiaLetras')
+let respuestaDiaLetras = document.getElementById('muestraDiaLetras')
 
 
-calcNumMayor.addEventListener('click', function (event) {
+calcDiaLetras.addEventListener('click', function (event) {
     event.preventDefault()
 
-    num1 = inputNum1.value
-    num2 = inputNum2.value
-    console.log(num1, num2)
-    if (num1 > num2) {
-        respuestaNumMayor.textContent = ``
-        respuestaNumMayor.textContent = `El número ${num1} es mayor que el número ${num2}`
-        return
-    } else if (num2 > num1) {
-        respuestaNumMayor.textContent = ``
-        respuestaNumMayor.textContent = `El número ${num2} es mayor que el número ${num1}`
-        return
-    } else {
-        respuestaNumMayor.textContent = ``
-        respuestaNumMayor.textContent = `Ambos números son iguales`
-        return
+    let numeroDia = Number(inputNumDia.value)
+
+    switch (numeroDia) {
+        case 1:
+            respuestaDiaLetras.textContent = `Lunes`
+            break;
+        
+        case 2:
+            respuestaDiaLetras.textContent = `Martes`
+            break;
+
+        case 3:
+            respuestaDiaLetras.textContent = `Miercoles`
+            break;
+
+        case 4:
+            respuestaDiaLetras.textContent = `Jueves`
+            break;
+
+        case 5:
+            respuestaDiaLetras.textContent = `Viernes`
+            break;
+        
+        case 6:
+            respuestaDiaLetras.textContent = `Sabado`
+            break;
+
+        case 7:
+            respuestaDiaLetras.textContent = `Domingo`
+            break;
+
+        default:
+            respuestaDiaLetras.textContent = `Número invalido`
+            break;
     }
 })
 
 // __________________________________________________________________________________________
 
-// Ejercicio 3  Año bisiesto
+// Ejercicio 3  Meses del año
 
 
 // Abre ventana
@@ -112,28 +132,74 @@ closeBtn3.addEventListener('click', function() {
     ventanaEjercicio3.classList.add('inactive')
 })
 
-let inputYear = document.getElementById('yearB')
-let calcBisiesto = document.getElementById('calcBisiesto')
-let respuestaBisiesto = document.getElementById('muestraBisiesto')
+let inputMesLetras = document.getElementById('numeroMes')
+let calcMesLetras = document.getElementById('calcMesLetras')
+let respuestaMesLetras = document.getElementById('muestraMesLetras')
 
 
-calcBisiesto.addEventListener('click', function (event) {
+calcMesLetras.addEventListener('click', function (event) {
     event.preventDefault()
 
-    year = inputYear.value
+    let numeroMonth = Number(inputMesLetras.value)
 
-    if (year % 4 == 0) {
-        respuestaBisiesto.textContent = `El año que ingresaste (${year}) es bisiesto`
-        return
-    } else {
-        respuestaBisiesto.textContent = `El año que ingresaste (${year}) no es bisiesto`
-        return
+    switch (numeroMonth) {
+        case 1:
+            respuestaMesLetras.textContent = `Enero`
+            break;
+        
+        case 2:
+            respuestaMesLetras.textContent = `Febrero`
+            break;
+
+        case 3:
+            respuestaMesLetras.textContent = `Marzo`
+            break;
+
+        case 4:
+            respuestaMesLetras.textContent = `Abril`
+            break;
+
+        case 5:
+            respuestaMesLetras.textContent = `Mayo`
+            break;
+        
+        case 6:
+            respuestaMesLetras.textContent = `Junio`
+            break;
+
+        case 7:
+            respuestaMesLetras.textContent = `Julio`
+            break;
+
+        case 8:
+            respuestaMesLetras.textContent = `Agosto`
+            break;
+
+        case 9:
+            respuestaMesLetras.textContent = `Septiembre`
+            break;
+
+        case 10:
+            respuestaMesLetras.textContent = `Octubre`
+            break;
+        
+        case 11:
+            respuestaMesLetras.textContent = `Noviembre`
+            break;
+
+        case 12:
+            respuestaMesLetras.textContent = `Diciembre`
+            break;
+
+        default:
+            respuestaMesLetras.textContent = `Número invalido 🤨`
+            break;
     }
 })
 
 // __________________________________________________________________________________________
 
-// Ejercicio 4 Vocal o consonante
+// Ejercicio 4 Operaciones matematicas
 
 // Abre ventana
 let btnEjercicio04 = document.getElementById('button4')
@@ -150,31 +216,54 @@ closeBtn4.addEventListener('click', function() {
     ventanaEjercicio4.classList.add('inactive')
 })
 
-let inputCaracter = document.getElementById('caracterUser')
-let calcVoCon = document.getElementById('calcVoCon')
-let respuestaVoCon = document.getElementById('muestraVoCon')
+let inputNumOp1 = document.getElementById('numeroOperacion1')
+let inputNumOp2 = document.getElementById('numeroOperacion2')
+let calcSuma = document.getElementById('calcSuma')
+let calcResta = document.getElementById('calcResta')
+let calcMultiplicacion = document.getElementById('calcMultiplicacion')
+let calcDivision = document.getElementById('calcDivision')
+let respuestaOperacion = document.getElementById('muestraOperacion')
 
 
-calcVoCon.addEventListener('click', function (event) {
+calcSuma.addEventListener('click', function (event) {
     event.preventDefault()
 
-    let letter = inputCaracter.value
+    let numOp1 = Number(inputNumOp1.value)
+    let numOp2 = Number(inputNumOp2.value)
+    
+    respuestaOperacion.textContent = `${numOp1} + ${numOp2} es igual a ${numOp1 + numOp2}`  
+})
 
-    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
-        respuestaVoCon.textContent = `El caracter que ingresaste es una vocal`
-        return
-    } else if (!Number.isNaN(letter)){
-        respuestaVoCon.textContent = `Tienes que escribir una consonante o vocal`
-        return
-    } else {
-        respuestaVoCon.textContent = `El caracter que ingresaste es una consonante`
-        return
-    }
+calcResta.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    let numOp1 = Number(inputNumOp1.value)
+    let numOp2 = Number(inputNumOp2.value)
+    
+    respuestaOperacion.textContent = `${numOp1} - ${numOp2} es igual a ${numOp1 - numOp2}`
+})
+
+calcMultiplicacion.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    let numOp1 = Number(inputNumOp1.value)
+    let numOp2 = Number(inputNumOp2.value)
+    
+    respuestaOperacion.textContent = `${numOp1} * ${numOp2} es igual a ${numOp1 * numOp2}`
+})
+
+calcDivision.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    let numOp1 = Number(inputNumOp1.value)
+    let numOp2 = Number(inputNumOp2.value)
+    
+    respuestaOperacion.textContent = `${numOp1} / ${numOp2} es igual a ${numOp1 / numOp2}`
 })
 
 // __________________________________________________________________________________________
 
-// Ejercicio 5 Número de dias del mes
+// Ejercicio 5 Palabras en ingles
 
 // Abre ventana
 let btnEjercicio05 = document.getElementById('button5')
@@ -191,29 +280,65 @@ closeBtn5.addEventListener('click', function() {
     ventanaEjercicio5.classList.add('inactive')
 })
 
-let inputMesUser = document.getElementById('mesUser')
-let calcDiasMes = document.getElementById('calcDiasMes')
-let respuestaDiasMes = document.getElementById('muestraDiasMes')
+let inputWordUser = document.getElementById('spanishWordUser')
+let traducirEnglish = document.getElementById('traducirEnglish')
+let respuestaTraduccion = document.getElementById('muestraTraduccion')
 
-
-calcDiasMes.addEventListener('click', function (event) {
+traducirEnglish.addEventListener('click', function (event) {
     event.preventDefault()
 
-    let userMonth = inputMesUser.value.toLowerCase()
-    console.log(userMonth)
+    let spanishWord = inputWordUser.value.toLowerCase()
 
-    if (userMonth == 'enero' || userMonth == 'marzo' || userMonth == 'mayo' || userMonth == 'julio' || userMonth == 'agosto' || userMonth == 'octubre' || userMonth == 'diciembre'){
-        respuestaDiasMes.textContent = `El mes que ingresaste tiene 31 días`
-    } else if (userMonth == 'abril' || userMonth == 'junio' || userMonth == 'septiembre' || userMonth == 'noviembre'){
-        respuestaDiasMes.textContent = `El mes que ingresaste tiene 30 días`
-    } else if (userMonth == 'febrero') {
-        respuestaDiasMes.textContent = `El mes que ingresaste tiene 28 o 29 días`
+    switch (spanishWord) {
+        case 'perro':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Dog`
+            break;
+        
+        case 'gato':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Cat`
+            break;
+
+        case 'pajaro':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Bird`
+            break;
+
+        case 'pez':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Fish`
+            break;
+
+        case 'conejo':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Rabbit`
+            break;
+        
+        case 'raton':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Mouse`
+            break;
+
+        case 'serpiente':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Snake`
+            break;
+
+        case 'tortuga':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Turtle`
+            break;
+
+        case 'hamster':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Hamster`
+            break;
+
+        case 'caballo':
+            respuestaTraduccion.textContent = `La traducción de ${spanishWord} es Horse`
+            break;
+
+        default:
+            respuestaTraduccion.textContent = `Escribe otra palabra`
+            break;
     }
 })
 
 // __________________________________________________________________________________________
 
-// Ejercicio 6 Calificacion con letras
+// Ejercicio 6 Calculadora de tarifa de envío
 
 // Abre ventana
 let btnEjercicio06 = document.getElementById('button6')
@@ -230,25 +355,77 @@ closeBtn6.addEventListener('click', function() {
     ventanaEjercicio6.classList.add('inactive')
 })
 
-let inputNotaUser = document.getElementById('notaUser')
-let calcLetraNota = document.getElementById('calcLetraNota')
-let respuestaLetraNota = document.getElementById('muestraLetraNota')
+let inputPesoPaquete = document.getElementById('pesoPaquete')
+let inputciudadDestino = document.getElementById('ciudadDestino')
+let calcTarifa = document.getElementById('calcTarifa')
+let respuestaTarifa = document.getElementById('muestraTarifa')
 
-calcLetraNota.addEventListener('click', function (event) {
+calcTarifa.addEventListener('click', function (event) {
     event.preventDefault()
 
-    let calificacion = inputNotaUser.value
+    let pesoPaquete = Number(inputPesoPaquete.value)
+    let destinoPaquete = inputciudadDestino.value.toLowerCase()
 
-    if (calificacion >= 0.0 && calificacion < 2.0) {
-        respuestaLetraNota.textContent = `Sacaste F`
-    } else if (calificacion >= 2.0 && calificacion < 4.0) {
-        respuestaLetraNota.textContent = `Sacaste D`
-    } else if (calificacion >= 4.0 && calificacion < 6.0) {
-        respuestaLetraNota.textContent = `Sacaste C`
-    } else if (calificacion >= 6.0 && calificacion < 8.0) {
-        respuestaLetraNota.textContent = `Sacaste B`
-    } else if (calificacion >= 8.0 && calificacion < 10.0) {
-        respuestaLetraNota.textContent = `Sacaste A`
+    switch (destinoPaquete) {
+        case 'neiva':
+            if (pesoPaquete > 0 && pesoPaquete < 1.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $11000`
+            } else if (pesoPaquete >= 1.0 && pesoPaquete < 2.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $13000`
+            } else if (pesoPaquete >= 2.0 && pesoPaquete < 5.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $15000`
+            } else if (pesoPaquete >= 5.0 && pesoPaquete < 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $16000`
+            } else if (pesoPaquete >= 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $21000`
+            }
+            break;
+        
+        case 'pasto':
+            if (pesoPaquete > 0 && pesoPaquete < 1.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $10500`
+            } else if (pesoPaquete >= 1.0 && pesoPaquete < 2.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $12500`
+            } else if (pesoPaquete >= 2.0 && pesoPaquete < 5.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $14500`
+            } else if (pesoPaquete >= 5.0 && pesoPaquete < 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $15500`
+            } else if (pesoPaquete >= 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $20500`
+            }
+            break;
+        
+        case 'cali':
+            if (pesoPaquete > 0 && pesoPaquete < 1.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $10000`
+            } else if (pesoPaquete >= 1.0 && pesoPaquete < 2.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $12000`
+            } else if (pesoPaquete >= 2.0 && pesoPaquete < 5.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $14000`
+            } else if (pesoPaquete >= 5.0 && pesoPaquete < 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $15000`
+            } else if (pesoPaquete >= 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $20000`
+            }
+            break;
+        
+        case 'bogota':
+            if (pesoPaquete > 0 && pesoPaquete < 1.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $12000`
+            } else if (pesoPaquete >= 1.0 && pesoPaquete < 2.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $14000`
+            } else if (pesoPaquete >= 2.0 && pesoPaquete < 5.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $16000`
+            } else if (pesoPaquete >= 5.0 && pesoPaquete < 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $17000`
+            } else if (pesoPaquete >= 10.0) {
+                respuestaTarifa.textContent = `La tarifa de envío es de $22000`
+            }
+            break;
+        
+        default:
+            respuestaTarifa.textContent = `Asegurate de escribir bien`
+            break;
     }
 })
 
