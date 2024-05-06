@@ -1,0 +1,59 @@
+* {
+    font-family: "Lexend", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+a {
+    color: black;
+}
+
+/* Estilos del header */
+.header {
+    height: 10vh;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.header-left img {
+    height: 100%;
+}
+h1 {
+    display: flex;
+}
+.sugar {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.fantasy {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.carrito-boton {
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Estilos del Contenido principal */
+.galeria-productos {
+    display: flex;
+    gap: 1rem;
+}
+.card {
+    width: 15rem;
+}
+.card .card-img-top {
+    width: 100%;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/add-to-cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <section class="header-left">
+            <img src="./img/sugar-fantasy-transparent.png" alt="">
+            <h1><span class="sugar">Sugar</span><br><span class="fantasy">Fantasy</span></h1>
+        </section>
+        <section class="header-right">
+            <nav>
+                <ul>
+                    <a href="#galeria">
+                        <li>Galería</li>
+                    </a>
+                </ul>
+            </nav>
+            <a onclick="mostrarCarrito()" class="carrito-boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg>
+            </a>
+        </section>
+    </header>
+    
+    <!-- Contenido Principal -->
+    <main>
+        <section class="galeria-productos">
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel01.jpg" alt="">
+                <h5>Pastel Happy</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel01.jpg', 'Pastel Happy', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel02.jpg" alt="">
+                <h5>Pastel Fantasy</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel02.jpg', 'Pastel Fantasy', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel03.jpg" alt="">
+                <h5>Pastel Lines</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel03.jpg', 'Pastel Lines', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel04.jpg" alt="">
+                <h5>Pastel Kids</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel04.jpg', 'Pastel Kids', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel05.jpg" alt="">
+                <h5>Pastel Love</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel05.jpg', 'Pastel Love', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel06.jpg" alt="">
+                <h5>Pastel Sky</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel06.jpg', 'Pastel Sky', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+            <!-- Productos -->
+            <article class="card">
+                <img class="card-img-top" src="./img/pastel07.jpg" alt="">
+                <h5>Pastel Rainbow</h5>
+                <p>Deléitate con nuestra irresistible selección de pasteles artesanales, horneados con amor y cuidado para satisfacer los paladares más exigentes.</p>
+                <p>$20</p>
+                <!-- Boton para agregar al carrito -->
+                <input onclick="añadirCarrito('./img/pastel07.jpg', 'Pastel Rainbow', '$20')" class="btn btn-primary añadir-carrito" type="button" value="Añadir al carrito">
+            </article>
+        </section>
+
+        <!-- Carrito -->
+        <section class="ventana-carrito">
+            <!-- Icono para cerrar el Carrito -->
+            <img class="cierra-modal" onclick="cerrarCarrito()" src="./img/close.png"></img>
+            
+        </section>
+    </main>
+
+    <script src="./js/add-to-cart.js"></script>
+</body>
+</html>

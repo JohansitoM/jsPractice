@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <main>
+        <h1>While</h1>
+        <section>
+            <!-- Ejercicio 1 -->
+            <button id="button1">01 Suma de números</button>
+            <div id="float-window-1" class="float-window inactive">
+                <a id="close-btn1">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Suma de números</h2>
+                <form>
+                    <p>Suma todos los números enteros positivos desde el 1 hasta el número ingresado por el usuario</p>
+                    <label for="numeroBucle">Ingresa el número hasta donde quieres sumar:</label><br>
+                    <input name="numeroBucle" id="numeroBucle" type="number" required><br>
+                    <button id="calcSumaNumeros" type="submit">Aceptar</button>  
+                </form>
+                <p id="muestraSumaNumeros"></p>
+            </div>
+
+            <!-- Ejercicio 2 ¡PENDIENTE! -->
+            <button id="button2">02 Cuenta Regresiva</button>
+            <div id="float-window-2" class="float-window inactive">
+                <a id="close-btn2" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Cuenta Regresiva</h2>
+                <form id="formularioTiempo">
+                    <p>El usuario ingresa un número y muestra una cuenta regresiva</p>
+                    <label for="inputTiempo">Ingresa el tiempo</label><br>
+                    <input min="1" name="inputTiempo" id="inputTiempo" type="number" required><br>
+                    <button id="iniciarCuenta" type="submit">Aceptar</button>  
+                </form>
+                <p id="muestraCuentaRegresiva"></p>
+            </div>
+
+            <!-- Ejercicio 3  -->
+            <button id="button3">03 Factorial</button>
+            <div id="float-window-3" class="float-window inactive">
+                <a id="close-btn3" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Factorial</h2>
+                <form>
+                    <p>Recibe el número ingresado por el usuario y calcula el Factorial</p>
+                    <label for="numeroFactorial">Ingresa un número</label><br>
+                    <input name="numberFactorial" id="numeroFactorial" type="number" required><br>
+                    <button id="calcFactorial" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraFactorial"></p>
+            </div>
+
+            <!-- Ejercicio 4  -->
+            <button id="button4">04 Adivina el número</button>
+            <div id="float-window-4" class="float-window inactive">
+                <a id="close-btn4" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Adivina el número</h2>
+                <form>
+                    <p>La máquina genera un número aleatorio del 1 - 10 y el usuario debe adivinarlo</p>
+                    <label>Adivina  el número que piensa la máquina 🤔</label>
+                    <button id="calcNumeroRandom" type="submit">Comenzar</button> 
+                </form>
+                <p id="muestraNumeroRandom"></p>
+            </div>
+
+            <!-- Ejercicio 5  -->
+            <button id="button5">05 Traductor</button>
+            <div id="float-window-5" class="float-window inactive">
+                <a id="close-btn5" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Traductor</h2>
+                <form>
+                    <p>Traductor de algunas palabras de español a ingles</p>
+                    <label for="spanishWordUser">Escribe la palabra que quieras traducir al inglés(perro, gato, pajaro, pez, conejo, raton, serpiente, tortuga, hamster, caballo)</label><br>
+                    <input name="spanishWord" id="spanishWordUser" type="text" required><br>
+                    <button id="traducirEnglish" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraTraduccion"></p>
+            </div>
+
+            <!-- Ejercicio 6  -->
+            <button id="button6">06 Calculadora de tarifa</button>
+            <div id="float-window-6" class="float-window inactive">
+                <a id="close-btn6" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Calculadora de tarifa</h2>
+                <form>
+                    <p>Calculadora de tarifa de envío</p>
+                    <label for="pesoPaquete">Escribe el peso de el paquete que quieres enviar en kg</label><br>
+                    <input name="pesoPaquete" id="pesoPaquete" type="number" required><br>
+                    <label for="ciudadDestino">Escribe la ciudad de destino del paquete: (Cali, Pasto, Neiva, Bogotá)</label><br>
+                    <input name="ciudadDestino" id="ciudadDestino" type="text" required><br>
+                    <button id="calcTarifa" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraTarifa"></p>
+            </div>
+
+            <!-- Ejercicio 7 -->
+            <button id="button7">07 Conversor de unidades de medidad</button>
+            <div id="float-window-7" class="float-window inactive">
+                <a id="close-btn7" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Conversor de unidades de medidad</h2>
+                <form>
+                    <p>Conversor de grados Celcius a Fahrenheit</p>
+                    <label for="celcius">Ingresa la temperatura en grados celcius</label><br>
+                    <input name="number" id="celcius" type="number" required><br>
+                    <button id="calcFahrenheit" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraFahrenheit"></p>
+            </div>
+
+            <!-- Ejercicio 8 -->
+            <button id="button8">08 Deteccion de tipo de dato</button>
+            <div id="float-window-8" class="float-window inactive">
+                <a id="close-btn8" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Contraseña</h2>
+                <form>
+                    <p>Este programa te dirá si la contraseña ingresada es correcta o incorecta</p>
+                    <label for="passwordUser">Ingresa tu contraseña</label><br>
+                    <input name="password" id="passwordUser" type="text" required placeholder="1234"><br>
+                    <button id="validarPass" type="submit">Validar</button>  
+                </form>
+                <p id="muestraPass"></p>
+            </div>
+
+            <!-- Ejercicio 9  -->
+            <button id="button9">09 Colores del arcoiris</button>
+            <div id="float-window-9" class="float-window inactive">
+                <a id="close-btn9" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Colores del arcoiris</h2>
+                <form>
+                    <p>Muestra si el color ingresado por el usuario está o no en el arcoiris</p>
+                    <label for="colorUser">Escribe un color</label><br>
+                    <input name="color" id="colorUser" type="text" required><br>
+                    <button id="validarColor" type="submit">Calcular</button>  
+                </form>
+                <p id="muestraColor"></p>
+            </div>
+
+            <!-- Ejercicio 10  -->
+            <button id="button10">10 Animales</button>
+            <div id="float-window-10" class="float-window inactive">
+                <a id="close-btn10" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Animales</h2>
+                <form>
+                    <p>Muestra la clasificación del animal que ingreses</p>
+                    <label for="animalUser">Escribe un animal</label><br>
+                    <input name="animal" id="animalUser" type="text" required><br>
+                    <button id="validarAnimal" type="submit">Aceptar</button>  
+                </form>
+                <p id="muestraAnimal"></p>
+            </div>
+
+        </section>
+    </main>
+    <script src="./js/while.js"></script>
+</body>
+</html>

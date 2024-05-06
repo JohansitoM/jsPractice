@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Icono -->
+    <link rel="icon" type="image/x-icon" href="./img/icon-park--arithmetic-buttons.png">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/calculadora.css">
+</head>
+<body>
+    <h2 id="titulo" >Calculadora</h2>
+    <section id="contenedor-general">
+        <!-- Inputs -->
+        <section id="input-section">
+            <section>
+                <label for="num1-usuario">Número 1</label><br>
+                <input class="input" id="num1-usuario" type="number" required>
+            </section>
+            <section>
+                <label for="num2-usuario">Número 2</label><br>
+                <input class="input" id="num2-usuario" type="number" required>
+            </section>
+        </section>
+
+        <section id="section-operations">
+            <!-- Operaciones  -->
+            <section id="container-btn">
+                <button onclick="sumarNumeros()" id="sumar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
+                </button>
+                <button onclick="restarNumeros()" id="restar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M19 12.998H5v-2h14z"/></svg>
+                </button>
+                <button onclick="multiplicarNumeros()" id="multiplicar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
+                </button>
+                <button onclick="dividirNumeros()" id="dividir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="m18.501 3.5l-15 15.001l1.996 1.996l15-15zM7.002 5a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4m10 10a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4"/></svg>
+                </button>
+            </section>
+            
+            <article id="field-resultado">
+                
+                <p id="resultado"></p>
+            </article>
+        </section>
+    
+    </section>
+
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>

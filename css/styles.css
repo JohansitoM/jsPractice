@@ -1,3 +1,13 @@
+* {
+    background-color: #1B1930;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+a {
+    text-decoration: none;
+    background: none;
+}
 .float-window {
     position: fixed;
     width: 80vw;
@@ -9,7 +19,63 @@
     padding: 20px;
     border: 1px solid black;
 }
-
 .inactive {
     display: none;
+}
+.titulo {
+    text-align: center;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 90%;
+    height: 5rem;
+    border-radius: 16px;
+}
+.links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.if-else-card {
+    background: #f12711;
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+.switch-card {
+    background: #c0392b;
+    background: linear-gradient(to right, #c0392b, #8e44ad);
+}
+.while-card {
+    background: #000046;
+    background: linear-gradient(to right, #000046, #1CB5E0);
+}
+.do-while-card {
+    background: #C33764;
+    background: linear-gradient(to right, #C33764, #1D2671);
+}
+.for-card {
+    background: #200122;
+    background: linear-gradient(to right, #200122, #6f0000);
+}
+.funciones-card {
+    background: #4568DC;
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+}
+.colores-card {
+    background: #093028;
+    background: linear-gradient(to right, #093028, #237A57);
+}
+.lista-card {
+    background: #ff00cc;
+    background: linear-gradient(to right, #ff00cc, #333399);
+}
+.calculadora-card {
+    background: #0B486B;
+    background: linear-gradient(to right, #0B486B, #F56217);
+}
+.tienda-card {
+    background: #304352;
+    background: linear-gradient(to right, #304352, #d7d2cc);
 }
