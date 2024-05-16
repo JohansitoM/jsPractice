@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/usuarios.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">Usuarios</h1>
+
+    <main class="contenedor">
+        <section class="form-container container">
+            <label for="userName">Ingrese su nombre de usuario</label>
+            <input class="input-nombre" id="userName" placeholder="Nombre" type="text">
+            <input class="btn" id="boton" onclick="guardarNombre()" type="button" value="Enviar">
+        </section>
+        <section class="container2 container">
+            <h3 class="">Usuarios Registrados</h3>
+        </section>
+    </main> 
+    <!-- Javascript -->
+    <script src="./js/usuarios.js"></script>
+</body>
+</html>

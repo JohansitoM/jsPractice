@@ -1,0 +1,72 @@
+* {
+    font-family: "Lexend", sans-serif;
+    padding: 0;
+    color: rgb(54, 54, 54);
+}
+.titulo {
+    text-align: center;
+    color: #FF004D;
+}
+.container {
+    padding: 2rem;
+    width: 40vw;
+}
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;  
+    margin: 0 auto;
+    height: 50vh;
+    border: 1px solid #FF004D; 
+    border-radius: 20px;  
+}
+.input-nombre {
+    height: 2.5rem;
+    width: 30rem;
+    border-radius: 20px;
+    color: black;
+    border: none;
+    padding-left: 1rem;
+    background-color: rgb(233, 233, 233);
+}
+.btn { 
+    height: 2rem;
+    width: 7rem;
+    background-color: #FF004D;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.container2 {
+    gap: 2rem;
+    margin: 0 auto;
+    height: 50vh;
+    border: 1px solid #FF004D; 
+    padding-left: 4rem;
+    border-radius: 20px;  
+    overflow: auto;
+}
+li {
+    width: 8rem;
+    display: flex;
+    justify-content: space-around  ;
+}
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button {
+    width: fit-content;
+    height: 1.5rem;
+    padding: 0 1rem ;
+    background-color: #FF004D;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}

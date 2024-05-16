@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>While</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -78,37 +78,35 @@
             </div>
 
             <!-- Ejercicio 5  -->
-            <button id="button5">05 Traductor</button>
+            <button id="button5">05 Fibonacci</button>
             <div id="float-window-5" class="float-window inactive">
                 <a id="close-btn5" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Traductor</h2>
+                <h2>Fibonacci</h2>
                 <form>
-                    <p>Traductor de algunas palabras de español a ingles</p>
-                    <label for="spanishWordUser">Escribe la palabra que quieras traducir al inglés(perro, gato, pajaro, pez, conejo, raton, serpiente, tortuga, hamster, caballo)</label><br>
-                    <input name="spanishWord" id="spanishWordUser" type="text" required><br>
-                    <button id="traducirEnglish" type="submit">Calcular</button>  
+                    <p>Generador de la secuencia Fibonacci</p>
+                    <label for="nFibonacci">Escribe cuantos números de la secuencia fibonacci quieres generar</label><br>
+                    <input name="fibonacci-user" id="nFibonacci" type="number" required><br>
+                    <button id="generarFibonacci" type="submit">Generar</button>  
                 </form>
-                <p id="muestraTraduccion"></p>
+                <p id="muestraFibonacci"></p>
             </div>
 
             <!-- Ejercicio 6  -->
-            <button id="button6">06 Calculadora de tarifa</button>
+            <button id="button6">06 Contador de Digitos</button>
             <div id="float-window-6" class="float-window inactive">
                 <a id="close-btn6" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Calculadora de tarifa</h2>
+                <h2>Contador de Digitos</h2>
                 <form>
-                    <p>Calculadora de tarifa de envío</p>
-                    <label for="pesoPaquete">Escribe el peso de el paquete que quieres enviar en kg</label><br>
-                    <input name="pesoPaquete" id="pesoPaquete" type="number" required><br>
-                    <label for="ciudadDestino">Escribe la ciudad de destino del paquete: (Cali, Pasto, Neiva, Bogotá)</label><br>
-                    <input name="ciudadDestino" id="ciudadDestino" type="text" required><br>
-                    <button id="calcTarifa" type="submit">Calcular</button>  
+                    <p>Cuenta y muestra la cantidad de dígitos en un número ingresado por el usuario</p>
+                    <label for="cantidadDigitos">Escribe el número</label><br>
+                    <input name="cantidadDigitos" id="cantidadDigitos" type="number" required><br>
+                    <button id="calcDigitos" type="submit">Calcular</button>  
                 </form>
-                <p id="muestraTarifa"></p>
+                <p id="muestraDigitos"></p>
             </div>
 
             <!-- Ejercicio 7 -->
