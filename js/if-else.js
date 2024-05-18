@@ -1,9 +1,8 @@
-let closeBtn1 = document.getElementById('close-btn1')
+// Cerrar todas las ventanas modales
+let closeBtn1 = document.querySelectorAll('.close-btn')
+
 let ventanaEjercicios = closeBtn1.parentNode
 
-closeBtn1.addEventListener('click', function() {
-    ventanaEjercicios.classList.add('inactive')
-})
 
 // Ejercicio 1 Número par o impar
 

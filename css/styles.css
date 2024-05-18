@@ -1,12 +1,48 @@
+/* Estilos Generales  */
 * {
-    background-color: #1B1930;
     font-family: "Lexend", sans-serif;
     font-weight: bold;
-    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
     background: none;
+    color: white;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+button {
+    border: none;
+    color: white;
+}
+h2 {
+    margin: 1rem 0;
+}
+input {
+    margin: 0.5rem 0;
+}
+
+/* Estilos especificos */
+.close-btn i {
+    font-size: 1.5rem;
+    color: rgb(187, 187, 187);
+}
+.dark-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.dark-bg {
+    background-color: #1B1930
+}
+.white-text {
+    color: white;   
 }
 .float-window {
     position: fixed;
@@ -15,21 +51,28 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     padding: 20px;
-    border: 1px solid black;
+    border-radius: 16px;
+}
+.button2 {
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
 }
 .inactive {
     display: none;
 }
 .titulo {
     text-align: center;
+    padding: 2rem 0;
 }
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     width: 90%;
     height: 5rem;
     border-radius: 16px;
@@ -38,44 +81,5 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-}
-.if-else-card {
-    background: #f12711;
-    background: linear-gradient(to right, #f12711, #f5af19);
-}
-.switch-card {
-    background: #c0392b;
-    background: linear-gradient(to right, #c0392b, #8e44ad);
-}
-.while-card {
-    background: #000046;
-    background: linear-gradient(to right, #000046, #1CB5E0);
-}
-.do-while-card {
-    background: #C33764;
-    background: linear-gradient(to right, #C33764, #1D2671);
-}
-.for-card {
-    background: #200122;
-    background: linear-gradient(to right, #200122, #6f0000);
-}
-.funciones-card {
-    background: #4568DC;
-    background: linear-gradient(to right, #4568DC, #B06AB3);
-}
-.colores-card {
-    background: #093028;
-    background: linear-gradient(to right, #093028, #237A57);
-}
-.lista-card {
-    background: #ff00cc;
-    background: linear-gradient(to right, #ff00cc, #333399);
-}
-.calculadora-card {
-    background: #0B486B;
-    background: linear-gradient(to right, #0B486B, #F56217);
-}
-.tienda-card {
-    background: #304352;
-    background: linear-gradient(to right, #304352, #d7d2cc);
+    justify-items: center;
 }

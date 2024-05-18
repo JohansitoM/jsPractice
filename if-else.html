@@ -6,31 +6,36 @@
     <title>If-Else</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="./css/gradients.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>   
 </head>
-<body>
-    <main>
-        <h1>If - Else</h1>
-        <section>
+<body class="white-text">
+    <div class="dark-screen inactive"></div>
+    <main class="dark-bg">
+        <h1 class="titulo white-text">If - Else</h1>
+        <section class="links-container">
             <!-- Ejercicio 1 -->
-            <button id="button1">01 Número par o impar</button>
-            <div id="float-window-1" class="float-window inactive">
-                <a id="close-btn1">
+            <button id="button1" class="card memariani-gradient">01 Número par o impar</button>
+            <div id="float-window-1" class="float-window inactive dark-bg">
+                <a id="close-btn1" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
                 <h2>Es Par o Impar</h2>
                 <form>
                     <label for="numberPI">Escribe un número y te dire si es par o impar</label><br>
                     <input name="numberPI" id="numberPI" type="number" required><br>
-                    <button id="calcParImpar" type="submit">Calcular</button>  
+                    <button class="memariani-gradient button2" id="calcParImpar" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraParImpar"></p>
             </div>
 
             <!-- Ejercicio 2 -->
-            <button id="button2">02 Número mayor</button>
+            <button id="button2" class="card amin-gradient">02 Número mayor</button>
             <div id="float-window-2" class="float-window inactive">
                 <a id="close-btn2" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -48,7 +53,7 @@
             </div>
 
             <!-- Ejercicio 3  -->
-            <button id="button3">03 Año bisiesto</button>
+            <button id="button3" class="card harvey-gradient">03 Año bisiesto</button>
             <div id="float-window-3" class="float-window inactive">
                 <a id="close-btn3" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -64,7 +69,7 @@
             </div>
 
             <!-- Ejercicio 4  -->
-            <button id="button4">04 Vocal o consonante</button>
+            <button id="button4" class="card neuromancer-gradient">04 Vocal o consonante</button>
             <div id="float-window-4" class="float-window inactive">
                 <a id="close-btn4" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -80,7 +85,7 @@
             </div>
 
             <!-- Ejercicio 5  -->
-            <button id="button5">05 Días del mes</button>
+            <button id="button5" class="card azur-lane-gradient">05 Días del mes</button>
             <div id="float-window-5" class="float-window inactive">
                 <a id="close-btn5" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -96,7 +101,7 @@
             </div>
 
             <!-- Ejercicio 6  -->
-            <button id="button6">06 Calificación</button>
+            <button id="button6" class="card witching-hour-gradient">06 Calificación</button>
             <div id="float-window-6" class="float-window inactive">
                 <a id="close-btn6" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -112,7 +117,7 @@
             </div>
 
             <!-- Ejercicio 7 -->
-            <button id="button7">07 Celcius a Fahrenheit</button>
+            <button id="button7" class="card flare-gradient">07 Celcius a Fahrenheit</button>
             <div id="float-window-7" class="float-window inactive">
                 <a id="close-btn7" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -128,7 +133,7 @@
             </div>
 
             <!-- Ejercicio 8 -->
-            <button id="button8">08 Contraseña</button>
+            <button id="button8" class="card metapolis-gradient">08 Contraseña</button>
             <div id="float-window-8" class="float-window inactive">
                 <a id="close-btn8" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -144,7 +149,7 @@
             </div>
 
             <!-- Ejercicio 9  -->
-            <button id="button9">09 Colores del arcoiris</button>
+            <button id="button9" class="card kyoo-pal-gradient">09 Colores del arcoiris</button>
             <div id="float-window-9" class="float-window inactive">
                 <a id="close-btn9" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -160,7 +165,7 @@
             </div>
 
             <!-- Ejercicio 10  -->
-            <button id="button10">10 Animales</button>
+            <button id="button10" class="card kye-meh-gradient">10 Animales</button>
             <div id="float-window-10" class="float-window inactive">
                 <a id="close-btn10" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -176,7 +181,7 @@
             </div>
 
             <!-- Ejercicio 11 -->
-            <button id="button11">11 Negativo, Positivo o Cero</button>
+            <button id="button11" class="card kyoo-tah-gradient">11 Negativo, Positivo o Cero</button>
             <div id="float-window-11" class="float-window inactive">
                 <a id="close-btn11" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -192,7 +197,7 @@
             </div>
 
             <!-- Ejercicio 12  -->
-            <button id="button12">12 Tres números</button>
+            <button id="button12" class="card bye-design-gradient">12 Tres números</button>
             <div id="float-window-12" class="float-window inactive">
                 <a id="close-btn12" class="close-btn">
                     <i class="fa-solid fa-xmark">x</i>
@@ -212,7 +217,7 @@
             </div>
 
             <!-- Ejercicio 13  -->
-            <button id="button13">13 Día Laboral</button>
+            <button id="button13" class="card ultra-violet-gradient">13 Día Laboral</button>
             <div id="float-window-13" class="float-window inactive">
                 <a id="close-btn13" class="close-btn">
                     <i class="fa-solid fa-xmark">x</i>
@@ -228,7 +233,7 @@
             </div>
 
             <!-- Ejercicio 14 -->
-            <button id="button14">14 Estación del año </button>
+            <button id="button14" class="card burning-orange-gradient">14 Estación del año </button>
             <div id="float-window-14" class="float-window inactive">
                 <a id="close-btn14" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -244,7 +249,7 @@
             </div>
 
             <!-- Ejercicio 15 -->
-            <button id="button15">15 Edad</button>
+            <button id="button15" class="card wiretap-gradient">15 Edad</button>
             <div id="float-window-15" class="float-window inactive">
                 <a id="close-btn15" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -260,7 +265,7 @@
             </div>
 
             <!-- Ejercicio 16 -->
-            <button id="button16">16 Tipo de carácter</button>
+            <button id="button16" class="card summer-dog-gradient">16 Tipo de carácter</button>
             <div id="float-window-16" class="float-window inactive">
                 <a id="close-btn16" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -276,7 +281,7 @@
             </div>
 
             <!-- Ejercicio 17 -->
-            <button id="button17">17 Números divisibles</button>
+            <button id="button17" class="card sin-city-red-gradient">17 Números divisibles</button>
             <div id="float-window-17" class="float-window inactive">
                 <a id="close-btn17" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
@@ -296,5 +301,6 @@
         </section>
     </main>
     <script src="./js/if-else.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
