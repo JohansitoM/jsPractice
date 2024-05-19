@@ -491,7 +491,7 @@ calcMayorMenor.addEventListener('click', function (event) {
 
 //____________________________________________________________________________________________________
 
-// Ejercicio 3 Dia laboral
+// Ejercicio 13 Dia laboral
 
 // Abre ventana
 let btnEjercicio13 = document.getElementById('button13')
@@ -527,7 +527,7 @@ calcDiaLaboral.addEventListener('click', function (event) {
 
 //____________________________________________________________________________________________________
 
-// Ejercicio 4 Estación del año 
+// Ejercicio 14 Estación del año 
 
 // Abre ventana
 let btnEjercicio14 = document.getElementById('button14')
@@ -554,13 +554,13 @@ calcEstacionMes.addEventListener('click', function (event) {
     let userMonthSeason = inputMesEstacion.value.toLowerCase()
 
     if (userMonthSeason == 'marzo' || userMonthSeason == 'abril' || userMonthSeason == 'mayo') {
-        respuestaEstacionMes.textContent = `Ese mes estás en primavera 🌸`
+        respuestaEstacionMes.textContent = `En ese mes estás en primavera 🌸`
     } else if (userMonthSeason == 'junio' || userMonthSeason == 'julio' || userMonthSeason == 'agosto') {
-        respuestaEstacionMes.textContent = `Ese mes estás en Verano 🌞`
+        respuestaEstacionMes.textContent = `En ese mes estás en Verano 🌞`
     } else if (userMonthSeason == 'septiembre' || userMonthSeason == 'octubre' || userMonthSeason == 'noviembre') {
-        respuestaEstacionMes.textContent = `Ese mes estás en Otoño 🍁`
+        respuestaEstacionMes.textContent = `En ese mes estás en Otoño 🍁`
     } else if (userMonthSeason == 'diciembre' || userMonthSeason == 'enero' || userMonthSeason == 'febrero') {
-        respuestaEstacionMes.textContent = `Ese mes estás en Invierno ❄️`
+        respuestaEstacionMes.textContent = `En ese mes estás en Invierno ❄️`
     } else {
         respuestaEstacionMes.textContent = `Escribe bien`
     }
@@ -598,8 +598,10 @@ calcEdad.addEventListener('click', function (event) {
         respuestaEdad.textContent = `Eres menor de edad`
     } else if (userEdad >= 18 && userEdad < 60) {
         respuestaEdad.textContent = `Eres mayor de edad`
+    } else if (userEdad >= 69 && userEdad < 150){
+        respuestaEdad.textContent = `Ya estás jubilado`
     } else {
-        respuestaEdad.textContent = `Ya estas jubilado`
+        respuestaEdad.textContent = `Ya estás jubilado y muerto 💀`
     }
 })
 
