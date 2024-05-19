@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="./css/gradients.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-    <main>
-        <h1>Switch</h1>
-        <section>
+    <!-- Efecto dark screen -->
+    <div class="dark-screen inactive"></div>
+
+    <main class="dark-bg white-text">
+        <h1 class="titulo">Switch</h1>
+        <section class="links-container">
             <!-- Ejercicio 1 -->
-            <button id="button1">01 Calificación de letras</button>
-            <div id="float-window-1" class="float-window inactive">
-                <a id="close-btn1">
+            <button class="card moon-purple-gradient" id="button1">01 Calificación de letras</button>
+            <div id="float-window-1" class="float-window inactive dark-bg">
+                <a id="close-btn1" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
                 <h2>Calificación de letras</h2>
                 <form>
                     <label for="calificacionLetra">Ingresa una letra (A, B, C, D, F)</label><br>
                     <input name="calificacion" id="calificacionLetra" type="text" required><br>
-                    <button id="calcCalificacionLetra" type="submit">Aceptar</button>  
+                    <button class="button2 moon-purple-gradient" id="calcCalificacionLetra" type="submit">Aceptar</button>  
                 </form>
                 <p id="muestraCalificacionLetra"></p>
             </div>
 
             <!-- Ejercicio 2 -->
-            <button id="button2">02 Número día</button>
-            <div id="float-window-2" class="float-window inactive">
+            <button class="card pun-yeta-gradient" id="button2">02 Número día</button>
+            <div id="float-window-2" class="float-window inactive dark-bg">
                 <a id="close-btn2" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -40,14 +47,14 @@
                     <p>Escribe un número y te devolverá el día</p>
                     <label for="numberDiaLetras">Ingresa un número del 1-7</label><br>
                     <input name="numberDia" id="numberDiaLetras" type="number" required><br>
-                    <button id="calcDiaLetras" type="submit">Aceptar</button>  
+                    <button class="button2 pun-yeta-gradient" id="calcDiaLetras" type="submit">Aceptar</button>  
                 </form>
                 <p id="muestraDiaLetras"></p>
             </div>
 
             <!-- Ejercicio 3  -->
-            <button id="button3">03 Meses del año</button>
-            <div id="float-window-3" class="float-window inactive">
+            <button class="card sublime-light-gradient" id="button3">03 Meses del año</button>
+            <div id="float-window-3" class="float-window inactive dark-bg">
                 <a id="close-btn3" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -56,14 +63,14 @@
                     <p>Ingresa un número y te devuelve el mes correspondiente</p>
                     <label for="numeroMes">Ingresa un número del 1-12</label><br>
                     <input name="numberMes" id="numeroMes" type="number" required><br>
-                    <button id="calcMesLetras" type="submit">Calcular</button>  
+                    <button class="button2 sublime-light-gradient" id="calcMesLetras" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraMesLetras"></p>
             </div>
 
             <!-- Ejercicio 4  -->
-            <button id="button4">04 Operaciones matematicas</button>
-            <div id="float-window-4" class="float-window inactive">
+            <button class="card bighead-gradient" id="button4">04 Operaciones matematicas</button>
+            <div id="float-window-4" class="float-window inactive dark-bg">
                 <a id="close-btn4" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -74,17 +81,17 @@
                     <input name="numberOp" id="numeroOperacion1" type="number" required><br>
                     <label for="numeroOperacion2">Escribe el segundo número</label><br>
                     <input name="numberOp" id="numeroOperacion2" type="number" required><br>
-                    <button id="calcSuma" type="submit">Sumar</button>  
-                    <button id="calcResta" type="submit">Restar</button> 
-                    <button id="calcMultiplicacion" type="submit">Multiplicar</button> 
-                    <button id="calcDivision" type="submit">Dividir</button> 
+                    <button class="button2 bighead-gradient" id="calcSuma" type="submit">Sumar</button>  
+                    <button class="button2 bighead-gradient" id="calcResta" type="submit">Restar</button> 
+                    <button class="button2 bighead-gradient" id="calcMultiplicacion" type="submit">Multiplicar</button> 
+                    <button class="button2 bighead-gradient" id="calcDivision" type="submit">Dividir</button> 
                 </form>
                 <p id="muestraOperacion"></p>
             </div>
 
             <!-- Ejercicio 5  -->
-            <button id="button5">05 Traductor</button>
-            <div id="float-window-5" class="float-window inactive">
+            <button class="card taran-tado-gradient" id="button5">05 Traductor</button>
+            <div id="float-window-5" class="float-window inactive dark-bg">
                 <a id="close-btn5" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -93,14 +100,14 @@
                     <p>Traductor de algunas palabras de español a ingles</p>
                     <label for="spanishWordUser">Escribe la palabra que quieras traducir al inglés(perro, gato, pajaro, pez, conejo, raton, serpiente, tortuga, hamster, caballo)</label><br>
                     <input name="spanishWord" id="spanishWordUser" type="text" required><br>
-                    <button id="traducirEnglish" type="submit">Calcular</button>  
+                    <button class="button2 taran-tado-gradient" id="traducirEnglish" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraTraduccion"></p>
             </div>
 
             <!-- Ejercicio 6  -->
-            <button id="button6">06 Calculadora de tarifa</button>
-            <div id="float-window-6" class="float-window inactive">
+            <button class="card relaxing-red-gradient" id="button6">06 Calculadora de tarifa</button>
+            <div id="float-window-6" class="float-window inactive dark-bg">
                 <a id="close-btn6" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -111,14 +118,14 @@
                     <input name="pesoPaquete" id="pesoPaquete" type="number" required><br>
                     <label for="ciudadDestino">Escribe la ciudad de destino del paquete: (Cali, Pasto, Neiva, Bogotá)</label><br>
                     <input name="ciudadDestino" id="ciudadDestino" type="text" required><br>
-                    <button id="calcTarifa" type="submit">Calcular</button>  
+                    <button class="button2 relaxing-red-gradient" id="calcTarifa" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraTarifa"></p>
             </div>
 
             <!-- Ejercicio 7 -->
-            <button id="button7">07 Conversor de unidades de medidad</button>
-            <div id="float-window-7" class="float-window inactive">
+            <button class="card lawrencium-gradient" id="button7">07 Conversor de unidades de medidad</button>
+            <div id="float-window-7" class="float-window inactive dark-bg">
                 <a id="close-btn7" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -127,14 +134,14 @@
                     <p>Conversor de grados Celcius a Fahrenheit</p>
                     <label for="celcius">Ingresa la temperatura en grados celcius</label><br>
                     <input name="number" id="celcius" type="number" required><br>
-                    <button id="calcFahrenheit" type="submit">Calcular</button>  
+                    <button class="button2 lawrencium-gradient" id="calcFahrenheit" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraFahrenheit"></p>
             </div>
 
             <!-- Ejercicio 8 -->
-            <button id="button8">08 Deteccion de tipo de dato</button>
-            <div id="float-window-8" class="float-window inactive">
+            <button class="card ohhappines-gradient" id="button8">08 Deteccion de tipo de dato</button>
+            <div id="float-window-8" class="float-window inactive dark-bg">
                 <a id="close-btn8" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -143,14 +150,14 @@
                     <p>Este programa te dirá si la contraseña ingresada es correcta o incorecta</p>
                     <label for="passwordUser">Ingresa tu contraseña</label><br>
                     <input name="password" id="passwordUser" type="text" required placeholder="1234"><br>
-                    <button id="validarPass" type="submit">Validar</button>  
+                    <button class="button2 ohhappines-gradient" id="validarPass" type="submit">Validar</button>  
                 </form>
                 <p id="muestraPass"></p>
             </div>
 
             <!-- Ejercicio 9  -->
-            <button id="button9">09 Colores del arcoiris</button>
-            <div id="float-window-9" class="float-window inactive">
+            <button class="card selenium-gradient" id="button9">09 Colores del arcoiris</button>
+            <div id="float-window-9" class="float-window inactive dark-bg">
                 <a id="close-btn9" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -159,14 +166,14 @@
                     <p>Muestra si el color ingresado por el usuario está o no en el arcoiris</p>
                     <label for="colorUser">Escribe un color</label><br>
                     <input name="color" id="colorUser" type="text" required><br>
-                    <button id="validarColor" type="submit">Calcular</button>  
+                    <button class="button2 selenium-gradient" id="validarColor" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraColor"></p>
             </div>
 
             <!-- Ejercicio 10  -->
-            <button id="button10">10 Animales</button>
-            <div id="float-window-10" class="float-window inactive">
+            <button class="card sulphur-gradient" id="button10">10 Animales</button>
+            <div id="float-window-10" class="float-window inactive dark-bg">
                 <a id="close-btn10" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -175,13 +182,15 @@
                     <p>Muestra la clasificación del animal que ingreses</p>
                     <label for="animalUser">Escribe un animal</label><br>
                     <input name="animal" id="animalUser" type="text" required><br>
-                    <button id="validarAnimal" type="submit">Aceptar</button>  
+                    <button class="button2 sulphur-gradient" id="validarAnimal" type="submit">Aceptar</button>  
                 </form>
                 <p id="muestraAnimal"></p>
             </div>
 
         </section>
     </main>
+
     <script src="./js/switch.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

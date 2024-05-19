@@ -43,7 +43,7 @@ calcCalificacionLetra.addEventListener('click', function (event) {
             break;
 
         default:
-            respuestaCalificacionLetra.textContent = `Letra invalid 🤨`
+            respuestaCalificacionLetra.textContent = `Letra invalida 🤨`
             break;
     }
 })
