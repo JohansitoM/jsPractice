@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>While</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="./css/gradients.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-    <main>
-        <h1>While</h1>
-        <section>
+    <!-- Efecto dark screen -->
+    <div class="dark-screen inactive"></div>
+
+    <main class="dark-bg white-text">
+        <h1 class="titulo">While</h1>
+        <section class="links-container">
             <!-- Ejercicio 1 -->
-            <button id="button1">01 Suma de números</button>
-            <div id="float-window-1" class="float-window inactive">
-                <a id="close-btn1">
+            <button class="card pink-flavour-gradient" id="button1">01 Suma de números</button>
+            <div id="float-window-1" class="float-window inactive dark-bg">
+                <a id="close-btn1" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
                 <h2>Suma de números</h2>
@@ -25,30 +32,30 @@
                     <p>Suma todos los números enteros positivos desde el 1 hasta el número ingresado por el usuario</p>
                     <label for="numeroBucle">Ingresa el número hasta donde quieres sumar:</label><br>
                     <input name="numeroBucle" id="numeroBucle" type="number" required><br>
-                    <button id="calcSumaNumeros" type="submit">Aceptar</button>  
+                    <button class="button2 pink-flavour-gradient" id="calcSumaNumeros" type="submit">Aceptar</button>  
                 </form>
                 <p id="muestraSumaNumeros"></p>
             </div>
 
-            <!-- Ejercicio 2 ¡PENDIENTE! -->
-            <button id="button2">02 Cuenta Regresiva</button>
-            <div id="float-window-2" class="float-window inactive">
+            <!-- Ejercicio 2 -->
+            <button class="card sublime-vivid-gradient" id="button2">02 Cuenta Regresiva</button>
+            <div id="float-window-2" class="float-window inactive dark-bg">
                 <a id="close-btn2" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
                 <h2>Cuenta Regresiva</h2>
                 <form id="formularioTiempo">
-                    <p>El usuario ingresa un número y muestra una cuenta regresiva</p>
-                    <label for="inputTiempo">Ingresa el tiempo</label><br>
+                    <p>El usuario ingresa un número y muestra una cuenta regresiva.</p>
+                    <label for="inputTiempo">Ingresa el tiempo:</label><br>
                     <input min="1" name="inputTiempo" id="inputTiempo" type="number" required><br>
-                    <button id="iniciarCuenta" type="submit">Aceptar</button>  
+                    <button class="button2 sublime-vivid-gradient" id="iniciarCuenta" type="submit">Aceptar</button>  
                 </form>
                 <p id="muestraCuentaRegresiva"></p>
             </div>
 
             <!-- Ejercicio 3  -->
-            <button id="button3">03 Factorial</button>
-            <div id="float-window-3" class="float-window inactive">
+            <button class="card rainbow-blue-gradient" id="button3">03 Factorial</button>
+            <div id="float-window-3" class="float-window inactive dark-bg">
                 <a id="close-btn3" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -57,14 +64,14 @@
                     <p>Recibe el número ingresado por el usuario y calcula el Factorial</p>
                     <label for="numeroFactorial">Ingresa un número</label><br>
                     <input name="numberFactorial" id="numeroFactorial" type="number" required><br>
-                    <button id="calcFactorial" type="submit">Calcular</button>  
+                    <button class="button2 rainbow-blue-gradient" id="calcFactorial" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraFactorial"></p>
             </div>
 
             <!-- Ejercicio 4  -->
-            <button id="button4">04 Adivina el número</button>
-            <div id="float-window-4" class="float-window inactive">
+            <button class="card orange-fun-gradient" id="button4">04 Adivina el número</button>
+            <div id="float-window-4" class="float-window inactive dark-bg">
                 <a id="close-btn4" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -72,14 +79,14 @@
                 <form>
                     <p>La máquina genera un número aleatorio del 1 - 10 y el usuario debe adivinarlo</p>
                     <label>Adivina  el número que piensa la máquina 🤔</label>
-                    <button id="calcNumeroRandom" type="submit">Comenzar</button> 
+                    <button class="button2 orange-fun-gradient" id="calcNumeroRandom" type="submit">Comenzar</button> 
                 </form>
                 <p id="muestraNumeroRandom"></p>
             </div>
 
             <!-- Ejercicio 5  -->
-            <button id="button5">05 Fibonacci</button>
-            <div id="float-window-5" class="float-window inactive">
+            <butto class="card digital-water-gradient" id="button5">05 Fibonacci</butto>
+            <div id="float-window-5" class="float-window inactive dark-bg">
                 <a id="close-btn5" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -88,14 +95,14 @@
                     <p>Generador de la secuencia Fibonacci</p>
                     <label for="nFibonacci">Escribe cuantos números de la secuencia fibonacci quieres generar</label><br>
                     <input name="fibonacci-user" id="nFibonacci" type="number" required><br>
-                    <button id="generarFibonacci" type="submit">Generar</button>  
+                    <button class="button2 digital-water-gradient" id="generarFibonacci" type="submit">Generar</button>  
                 </form>
                 <p id="muestraFibonacci"></p>
             </div>
 
             <!-- Ejercicio 6  -->
-            <button id="button6">06 Contador de Digitos</button>
-            <div id="float-window-6" class="float-window inactive">
+            <button class="card lithium-gradient" id="button6">06 Contador de Digitos</button>
+            <div id="float-window-6" class="float-window inactive dark-bg">
                 <a id="close-btn6" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -104,77 +111,79 @@
                     <p>Cuenta y muestra la cantidad de dígitos en un número ingresado por el usuario</p>
                     <label for="cantidadDigitos">Escribe el número</label><br>
                     <input name="cantidadDigitos" id="cantidadDigitos" type="number" required><br>
-                    <button id="calcDigitos" type="submit">Calcular</button>  
+                    <button class="button2 lithium-gradient" id="calcDigitos" type="submit">Calcular</button>  
                 </form>
                 <p id="muestraDigitos"></p>
             </div>
 
             <!-- Ejercicio 7 -->
-            <button id="button7">07 Conversor de unidades de medidad</button>
-            <div id="float-window-7" class="float-window inactive">
+            <button class="card argon-gradient" id="button7">07 Tabla de multiplicar</button>
+            <div id="float-window-7" class="float-window inactive dark-bg">
                 <a id="close-btn7" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Conversor de unidades de medidad</h2>
+                <h2>Tabla de multiplicar</h2>
                 <form>
-                    <p>Conversor de grados Celcius a Fahrenheit</p>
-                    <label for="celcius">Ingresa la temperatura en grados celcius</label><br>
-                    <input name="number" id="celcius" type="number" required><br>
-                    <button id="calcFahrenheit" type="submit">Calcular</button>  
+                    <p>Imprime la tabla de multiplicar de un número ingresado por el usuario</p>
+                    <label for="numero-tabla">Ingresa un número</label><br>
+                    <input name="number" id="numero-tabla" type="number" required><br>
+                    <button class="button2 argon-gradient" id="crearTabla" type="submit">Mostrar</button>  
                 </form>
-                <p id="muestraFahrenheit"></p>
+                <p id="muestraTabla"></p>
             </div>
 
             <!-- Ejercicio 8 -->
-            <button id="button8">08 Deteccion de tipo de dato</button>
-            <div id="float-window-8" class="float-window inactive">
+            <button class="card hydrogen-gradient" id="button8">08 Conversor de temperatura</button>
+            <div id="float-window-8" class="float-window inactive dark-bg">
                 <a id="close-btn8" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Contraseña</h2>
+                <h2>Conversor de temperatura</h2>
                 <form>
-                    <p>Este programa te dirá si la contraseña ingresada es correcta o incorecta</p>
-                    <label for="passwordUser">Ingresa tu contraseña</label><br>
-                    <input name="password" id="passwordUser" type="text" required placeholder="1234"><br>
-                    <button id="validarPass" type="submit">Validar</button>  
+                    <p>Este programa mostrara un prompt preguntandote los grados celcius que quieras convertir a fahrenheit</p>
+                    
+                    <button class="button2 hydrogen-gradient" id="ciclo-grados" type="submit">Comenzar</button>  
                 </form>
-                <p id="muestraPass"></p>
+                <p id="muestraConversion"></p>
             </div>
 
             <!-- Ejercicio 9  -->
-            <button id="button9">09 Colores del arcoiris</button>
-            <div id="float-window-9" class="float-window inactive">
+            <button class="card velvet-sun-gradient" id="button9">09 Número Primo</button>
+            <div id="float-window-9" class="float-window inactive dark-bg">
                 <a id="close-btn9" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Colores del arcoiris</h2>
+                <h2>Número Primo</h2>
                 <form>
-                    <p>Muestra si el color ingresado por el usuario está o no en el arcoiris</p>
-                    <label for="colorUser">Escribe un color</label><br>
-                    <input name="color" id="colorUser" type="text" required><br>
-                    <button id="validarColor" type="submit">Calcular</button>  
+                    <p>Te dira si el número ingresado por el usuario es primo o no</p>
+                    <label for="userPrimo">Escribe un número</label><br>
+                    <input name="primo" id="userPrimo" type="number" required><br>
+                    <button class="button2 velvet-sun-gradient" id="validarPrimo" type="submit">Calcular</button>  
                 </form>
-                <p id="muestraColor"></p>
+                <p id="muestraPrimo"></p>
             </div>
 
             <!-- Ejercicio 10  -->
-            <button id="button10">10 Animales</button>
-            <div id="float-window-10" class="float-window inactive">
+            <button class="card king-yna-gradient" id="button10">10 Simulador de ahorro</button>
+            <div id="float-window-10" class="float-window inactive dark-bg">
                 <a id="close-btn10" class="close-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <h2>Animales</h2>
+                <h2>Simulador de ahorro</h2>
                 <form>
-                    <p>Muestra la clasificación del animal que ingreses</p>
-                    <label for="animalUser">Escribe un animal</label><br>
-                    <input name="animal" id="animalUser" type="text" required><br>
-                    <button id="validarAnimal" type="submit">Aceptar</button>  
+                    <p>Muestra la cantidad total ahorrada más los intereses(12% E.A) generados</p>
+                    <label for="ahorro-mes">¿Cuanto quieres ahorrar mensual?</label><br>
+                    <input name="ahorro-mes" id="ahorro-mes" type="number" required><br><label for="meses-ahorrados">Escribe cuantos meses vas a ahorrar:</label><br>
+                    <input name="meses-ahorro" id="meses-ahorrados" type="number" required><br>
+
+                    <button class="button2 king-yna-gradient" id="calcAhorro" type="submit">Calcular</button>  
                 </form>
-                <p id="muestraAnimal"></p>
+                <p id="muestraAhorro"></p>
             </div>
 
         </section>
     </main>
     <script src="./js/while.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
